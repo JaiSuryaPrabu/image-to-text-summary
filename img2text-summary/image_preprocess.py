@@ -79,8 +79,8 @@ def preprocessing(image):
   n_i=noise_reduction(g_i)
   c_i=contrast_stretching(n_i)
   r_i=resize_image(c_i,224, 224)
-  b_i=binarize_image(r_i)
-  norm_image=normalize_image(b_i)
-  return norm_image
+  # b_i=binarize_image(r_i)
+  # norm_image=normalize_image(b_i)
+  return r_i
 
 preprocessing(image)
